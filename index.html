@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        <script id="message" type="text/template">
+            <div class="message clearfix">
+                <div class="message__avatar">
+                    <div class="avatar__img"></div>
+                </div>
+                <div class="message__content">
+                    <p class="message__text"></p>
+                    <div class="message__info">
+                        <span class="info__user-name"></span>
+                        <span class="info__date"></span>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script id="user" type="text/template">
+            <div class="user">
+                <div class="user__avatar"></div>
+                <div class="user__info">
+                    <p class="info__name"></p>
+                    <p class="info__active-time"></p>
+                </div>
+            </div>
+        </script>
+
+    </head>
+
+    <body class="page">
+        <div id="page__chat-window" class="page__chat-window">
+            <div id="chat-window" class="chat-window">
+                <div class="chat-window__head">
+                    <p id="chat-window__head__title" class="chat-window__head__title"></p>
+                </div>
+                <div id="chat-window__messages" class="chat-window__messages"></div>
+                <div class="chat-window__message-input">
+                    <input id="message-input" class="message-input__input" type="text" placeholder="Enter Message"/><button
+                        id="btn-send" class="message-input__btn-send">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="page__contacts-list">
+            <div class="contacts-list">
+                <div class="contacts-list__head">
+                    <p class="contacts-list__head__title">Online users</p>
+                </div>
+                <div id="user-list" class="contacts-list__users">
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

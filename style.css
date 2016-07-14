@@ -1,0 +1,177 @@
+.page {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.page__chat-window {
+    float: left;
+    padding-right: 30px;
+}
+
+.chat-window {
+    width: 750px;
+    border: 1px solid #f0fafc;
+    border-radius: 4px;
+}
+
+.chat-window__head {
+    height: 40px;
+    background-color: #d9edf7;
+    border-bottom: 1px solid #bce8f1;
+}
+
+.chat-window__head__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #31708f;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.chat-window__messages {
+    height: 570px;
+    overflow-y: auto;
+}
+
+.chat-window__message-input {
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+}
+
+.message {
+    padding: 15px;
+}
+
+.message__avatar {
+    float: left;
+    margin-right: 10px;
+}
+
+.avatar__img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.message__content {
+    border-bottom: 1px solid #eeeeee;
+    margin-right: 10px;
+    padding: 0 0 20px 0;
+    overflow: hidden;
+}
+
+.message__text {
+    margin: 0;
+}
+
+.message__info {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #777794;
+    margin-top: 0;
+}
+
+.message-input__input {
+    width: 620px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: 0;
+    padding: 0 15px;
+}
+
+.message-input__btn-send {
+    width: 68px;
+    height: 34px;
+    line-height: 32px;
+    background-color: #5bc0de;
+    color: #ffffff;
+    border: 1px solid #46b8da;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+    outline: 0;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.page__contacts-list {
+    float: left;
+}
+
+.contacts-list {
+    width: 358px;
+    border: 1px solid #94bde1;
+    border-radius: 4px;
+}
+
+.contacts-list__head {
+    height: 40px;
+    background-color: #428bca;
+    color: #ffffff;
+}
+
+.contacts-list__head__title {
+    font-size: 16px;
+    line-height: 2.5;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+.user {
+    padding: 7px 15px 15px 15px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #e8f4fa;
+}
+
+.user__avatar {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 6px 0 0;
+}
+
+.user__info {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.info__user-name:after {
+    content: ' | ';
+}
+
+.info__name {
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.info__name:after {
+    content: ' | User';
+}
+
+.info__active-time {
+    color: #777794;
+    margin: 0;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
